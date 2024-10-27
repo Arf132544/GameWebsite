@@ -79,9 +79,9 @@ body {
 
 .hero-content p {
   font-size: 1.5rem;
+  margin-bottom: 5rem; /*add space below paragraph*/
 }
 
-/* Responsive Styling */
 @media (max-width: 768px) {
   .navbar-title {
     font-size: 1.2rem;
@@ -110,6 +110,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+
 }
 
 .btn:hover {
