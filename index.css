@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, gray, darkgray);
+  color: white;
 }
 
 .navbar {
@@ -14,9 +14,13 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #4A90E2;
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar-title {
@@ -38,4 +42,61 @@ body {
 
 .navbar .nav-btn:hover {
   color: #ffdd57;
+}
+
+.hero-section {
+  height: 100vh;
+  background: url('background.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 5rem;
+  position: relative;
+  color: white;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .navbar-title {
+    font-size: 1.2rem;
+  }
+
+  .navbar .nav-btn {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
 }
