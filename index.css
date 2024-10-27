@@ -6,10 +6,9 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #e0e0e0, #b0b0b0); /* Grey gradient */
+  background: linear-gradient(to bottom, gray, darkgray);
 }
 
-/* Navigation Bar */
 .navbar {
   display: flex;
   justify-content: space-between;
